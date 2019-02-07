@@ -101,7 +101,7 @@ describe('isLessThanOrEqualTo', () => {
 });
 
 describe('isOdd', () => {
-  xit('returns whether the number is odd', () => {
+  it('returns whether the number is odd', () => {
     expect(isOdd(5)).toBe(true);
     expect(isOdd(6)).toBe(false);
     expect(isOdd(7)).toBe(true);
@@ -110,7 +110,7 @@ describe('isOdd', () => {
 });
 
 describe('isEven', () => {
-  xit('returns whether the number is even', () => {
+  it('returns whether the number is even', () => {
     expect(isEven(5)).toBe(false);
     expect(isEven(6)).toBe(true);
     expect(isEven(7)).toBe(false);
@@ -119,7 +119,7 @@ describe('isEven', () => {
 });
 
 describe('isSquare', () => {
-  xit('returns true if the number is a square', () => {
+  it('returns true if the number is a square', () => {
     expect(isSquare(9)).toEqual(true);
     expect(isSquare(5)).toEqual(false);
     expect(isSquare(-4)).toEqual(false);
@@ -128,7 +128,7 @@ describe('isSquare', () => {
 });
 
 describe('startsWith', () => {
-  xit('returns whether the given string starts with the given character', () => {
+  it('returns whether the given string starts with the given character', () => {
     expect(startsWith('a', 'aardvark')).toBe(true);
     expect(startsWith('a', 'qaardvark')).toBe(false);
     expect(startsWith('a', 'Aardvark')).toBe(false);
@@ -136,7 +136,7 @@ describe('startsWith', () => {
 });
 
 describe('containsVowels', () => {
-  xit('returns whether the given string contains vowels', () => {
+  it('returns whether the given string contains vowels', () => {
     expect(containsVowels('cat')).toBe(true);
     expect(containsVowels('DOG')).toBe(true);
     expect(containsVowels('why')).toBe(false);

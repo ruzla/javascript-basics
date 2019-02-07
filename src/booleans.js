@@ -35,24 +35,43 @@ const isLessThanOrEqualTo = (a, b) => {
 };
 
 const isOdd = (a) => {
-  // your code here
+  if (a % 2 === 0) {
+    return false;
+  } else 
+   return true;
 };
 
 const isEven = (a) => {
-  // your code here
+  if (a % 2 === 0) {
+    return true;
+  } else
+   return false;
 };
 
 const isSquare = (a) => {
-  // your code here
+  if (Math.sqrt(a) % 1 === 0){
+    return true;
+  } else
+  return false;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  if (string.charAt(0) === char){
+    return true;
+  } else
+  return false;
 };
 
 const containsVowels = (string) => {
-  // your code here
-};
+  string.toLowerCase();
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  for (i = 0; i < vowels.length; i++){
+    if (string.includes(vowels[i])){
+      return true;
+    }
+ }
+ 
+}; 
 
 const isLowerCase = (string) => {
   // your code here
