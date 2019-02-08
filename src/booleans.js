@@ -80,7 +80,11 @@ const containsVowels = (string) => {
   
 
 const isLowerCase = (string) => {
-  // your code here
+  if (string.match(/[A-Z]/)) {
+    return false;
+  } else {
+    return true;
+  }
 };
 
 module.exports = {
