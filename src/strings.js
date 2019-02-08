@@ -3,19 +3,21 @@ const sayHello = (string) => {
 };
 
 const uppercase = (string) => {
-  // your code here
+  string = string.toUpperCase();
+  return string;
 };
 
 const lowercase = (string) => {
-  // your code here
+  string = string.toLowerCase();
+  return string;
 };
 
 const countCharacters = (string) => {
-  // your code here
+  return string.length;
 };
 
 const firstCharacter = (string) => {
-  // your code here
+  return string.charAt(0);
 };
 
 const firstCharacters = (string, n) => {
