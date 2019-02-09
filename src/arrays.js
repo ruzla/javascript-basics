@@ -34,43 +34,68 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index, 1);
 };
 
 const numbersToStrings = (numbers) => {
-  // your code here
+  return numbers.toString().split(',');
 };
 
 const uppercaseWordsInArray = (strings) => {
-  // your code here
+  for (let i = 0; i < strings.length; i++) {
+    strings[i] = strings[i].toUpperCase();
+  }
+  return strings;
 };
 
 const reverseWordsInArray = (strings) => {
-  // your code here
+  for (let i = 0; i < strings.length; i++){ 
+   strings[i] = strings[i].split('').reverse().join('');
+ };
+ return strings;
 };
 
 const onlyEven = (numbers) => {
-  // your code here
+  for (let i = 0; i < numbers.length; i++) {
+    while (numbers[i] % 2) {
+        numbers.splice(i, 1);
+    };
+};
+return numbers;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const removeNthElement2 = array.filter(a => a !== array[index]);
+  return removeNthElement2;
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // your code here
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  const elementsStartingWithAVowel =[];
+  for (let i = 0; i < strings.length; i++) {
+    for (let a = 0; a < vowels.length; a++){
+    if (strings[i].charAt(0) === vowels[a]){
+      elementsStartingWithAVowel.push(strings[i]);
+    };
+  }; 
+  };
+  return elementsStartingWithAVowel;
 };
 
 const removeSpaces = (string) => {
-  // your code here
+  return string.replace(/\s/g, '');
 };
 
 const sumNumbers = (numbers) => {
-  // your code here
+  let total = 0;
+  for (let i = 0; i < numbers.length; i++){
+    total = total + numbers[i];
+  };
+  return total;
 };
 
 const sortByLastLetter = (strings) => {
-  // your code here
+  return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 };
 
 module.exports = {
