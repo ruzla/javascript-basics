@@ -66,7 +66,7 @@ const containsVowels = (string) => {
   string = string.toLowerCase();
   let vowelCount = 1;
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  for (i = 0; i <= vowels.length; i++){
+  for (let i = 0; i <= vowels.length; i++){
     if (string.includes(vowels[i])){
     vowelCount ++;
     };

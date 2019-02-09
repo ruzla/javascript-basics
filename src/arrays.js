@@ -1,21 +1,36 @@
 const getNthElement = (index, array) => {
-  // your code here
+  if (index > array.length - 1){
+    index = index - array.length;
+    return array[index];
+  } else {
+  return array[index];
+  }
 };
 
 const arrayToCSVString = (array) => {
-  // your code here
+  csvString ='';
+  for (let i = 0; i < array.length; i++){
+   if (i < array.length - 1){
+    csvString = csvString + array[i] + ',';
+   } else {
+    csvString = csvString + array[i]; 
+   } 
+  }
+  return csvString;
 };
 
 const csvStringToArray = (string) => {
-  // your code here
+  //The split() method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  const Array2 = array.concat(element);
+  return Array2;
 };
 
 const removeNthElement = (index, array) => {
