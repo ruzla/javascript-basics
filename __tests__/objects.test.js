@@ -49,14 +49,14 @@ describe('hasProperty', () => {
     age: 79,
   };
 
-  xit('returns true if the object has the given property', () => {
+  it('returns true if the object has the given property', () => {
     expect(hasProperty('age', fred)).toBe(true);
     expect(hasProperty('favouriteColour', fred)).toBe(false);
   });
 });
 
 describe('isOver65', () => {
-  xit('returns true if the person is aged over 65', () => {
+  it('returns true if the person is aged over 65', () => {
     const jim = {
       name: 'Jim',
       age: 66,
