@@ -48,7 +48,7 @@ const averageAge = (people) => {
   for (let i = 0; i < ages.length; i++){
     total = total + ages[i];
   };
-  return total/ages.length;; 
+  return total/ages.length;
 };
 
 const createTalkingPerson = (name, age) => {
