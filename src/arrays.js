@@ -4,7 +4,7 @@ const getNthElement = (index, array) => {
     return array[index];
   } else {
   return array[index];
-  }
+  };
 };
 
 const arrayToCSVString = (array) => {

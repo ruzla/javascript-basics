@@ -64,19 +64,25 @@ const startsWith = (char, string) => {
 
 const containsVowels = (string) => {
   string = string.toLowerCase();
-  let vowelCount = 1;
+  // let vowelCount = 1;
   const vowels = ['a', 'e', 'i', 'o', 'u'];
-  for (let i = 0; i <= vowels.length; i++){
-    if (string.includes(vowels[i])){
-    vowelCount ++;
-    };
-  };
-  if (vowelCount >= 2){
-   return true;
+  // for (let i = 0; i <= vowels.length; i++){
+  //   if (string.includes(vowels[i])){
+  //   vowelCount ++;
+  //   };
+  // };
+  // if (vowelCount >= 2){
+  //  return true;
+  // } else {
+  //  return false;
+  // };
+  if (string.match(/[aeiou]/) ) {
+    return true;
   } else {
-   return false;
+    return false;
   };
 };
+
   
 
 const isLowerCase = (string) => {
