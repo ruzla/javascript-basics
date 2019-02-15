@@ -35,62 +35,30 @@ const isLessThanOrEqualTo = (a, b) => {
 };
 
 const isOdd = (a) => {
-  if (a % 2 === 0) {
-    return false;
-  } else 
-   return true;
+  return (a % 2 === 0 ? false : true);
 };
 
 const isEven = (a) => {
-  if (a % 2 === 0) {
-    return true;
-  } else
-   return false;
+  return (a % 2 === 0 ? true : false);
 };
 
 const isSquare = (a) => {
-  if (Math.sqrt(a) % 1 === 0){
-    return true;
-  } else
-  return false;
+  return (Math.sqrt(a) % 1 === 0 ? true : false);
 };
 
 const startsWith = (char, string) => {
-  if (string.charAt(0) === char){
-    return true;
-  } else
-  return false;
+  return (string.charAt(0) === char ? true : false);
 };
 
 const containsVowels = (string) => {
   string = string.toLowerCase();
-  // let vowelCount = 1;
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
-  // for (let i = 0; i <= vowels.length; i++){
-  //   if (string.includes(vowels[i])){
-  //   vowelCount ++;
-  //   };
-  // };
-  // if (vowelCount >= 2){
-  //  return true;
-  // } else {
-  //  return false;
-  // };
-  if (string.match(/[aeiou]/) ) {
-    return true;
-  } else {
-    return false;
-  };
+  return (string.match(/[aeiou]/) ? true : false);
 };
 
   
 
 const isLowerCase = (string) => {
-  if (string.match(/[A-Z]/)) {
-    return false;
-  } else {
-    return true;
-  }
+  return (string.match(/[A-Z]/) ? false : true);
 };
 
 module.exports = {
