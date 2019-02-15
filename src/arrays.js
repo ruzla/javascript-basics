@@ -20,12 +20,11 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  const Array2 = array.concat(element);
-  return Array2;
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  array.splice(index, 1);
+  return array.splice(index, 1);
 };
 
 const numbersToStrings = (numbers) => {
