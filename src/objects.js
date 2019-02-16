@@ -1,3 +1,12 @@
+/* 
+  your code is correct, but there is a shorter way to set properties on an object
+  you can simply set them at the point of creation
+
+  const person = {
+    name: name,
+    age: age
+  };
+*/
 const createPerson = (name, age) => {
   const person = {};
   person.name = name;
@@ -18,10 +27,13 @@ const hasProperty = (property, object) => {
 };
 
 const isOver65 = (person) => {
+  /* brackets are unnecessary around (person.age > 65)  */
   return (person.age > 65) ? true : false;
 };
 
 const getAges = (people) => {
+  // you can also do this with a .map()
+  // return people.map(person => person.age);
   const age = [];
   for (let i = 0; i < people.length; i++){
     age.push(people[i].age);
@@ -48,7 +60,8 @@ const averageAge = (people) => {
   for (let i = 0; i < ages.length; i++){
     total = total + ages[i];
   };
-  
+  // nothing wrong with 2 for loops approach but
+  // this logic can be achieved with a .reduce() as well if you want to attemp it as a challenge
   return total/ages.length;
 
 };
