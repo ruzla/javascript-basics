@@ -1,5 +1,12 @@
 const getNthElement = (index, array) => {
   if (index > array.length - 1){
+    // I don't think this logic is correct
+    // let's say array has 10 items
+    // I pass in the index argument as 30
+    // then your index calculation would be 30 - 10 = 20
+    // return array[20]; // would be undefined?
+    // do you want to return the last element when index given is larger than number of items in the array?
+    // ^ this logic is simpler...
     index = index - array.length;
     return array[index];
   } else {
@@ -48,7 +55,9 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  return (strings.filter(str => /^[aeiou]/i.test(str)));
+  // using regex, that's smart! 
+  // you dont need the brackets around your return though (deleted them in this PR) 
+  return strings.filter(str => /^[aeiou]/i.test(str)); 
 };
 
 const removeSpaces = (string) => {
@@ -60,6 +69,7 @@ const sumNumbers = (numbers) => {
 };
 
 const sortByLastLetter = (strings) => {
+  // good work
   return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 };
 
