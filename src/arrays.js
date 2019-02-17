@@ -48,8 +48,6 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = (strings) => {
-  // using regex, that's smart! 
-  // you dont need the brackets around your return though (deleted them in this PR) 
   return strings.filter(str => /^[aeiou]/i.test(str)); 
 };
 
@@ -62,7 +60,6 @@ const sumNumbers = (numbers) => {
 };
 
 const sortByLastLetter = (strings) => {
-  // good work
   return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 };
 
